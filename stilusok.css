@@ -1,0 +1,83 @@
+body {
+    background-image: url("images\\wallpaper.jpg");
+    background-size: 100% auto;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    opacity: 0.9;
+}
+
+table {
+    background-color: goldenrod;
+    width: 90%;
+    margin: auto;
+    border-left: 5px solid rgb(236, 201, 112);
+    border-top: 5px solid rgb(236, 201, 112);
+    box-shadow:10px 12px 20px rgb(85, 71, 31);
+}
+
+caption {
+    color: lightgoldenrodyellow;
+    font-size: 2em;
+    text-shadow: 3px 5px 3px goldenrod;
+    margin: 0.8cm;
+}
+
+tr {
+    height: 1.8em;
+}
+
+td {
+    background-color: khaki;
+    text-align: center;
+}
+
+th {
+    font-size: 0.9em;
+}
+
+thead {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+thead th a:hover {
+    opacity: 0.6;
+    color: red;
+    border: 2px solid red;;
+}
+
+thead th a:visited {
+    background-color :orange;
+    text-decoration: none;
+}
+
+thead th a:link {
+    font-size: 1.3em;
+    border-radius: 20px 20px 5px 5px;
+    background-color:gold;
+    padding: 2px 30%;
+    text-decoration: none;
+}
+
+tbody {
+    font-size: 1.2em;
+}
+
+tfoot th {
+    text-shadow: 6px 3px 4px yellow;
+}
+
+
+section {
+    background-color: peru;
+    margin: 1cm;
+    padding: 5px 20px;
+    color: rgb(46, 9, 9);
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+}

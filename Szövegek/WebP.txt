@@ -1,0 +1,7 @@
+A WebP (ejtsd: „veppi”) egy új, veszteséges és veszteségmentes tömörítést alkalmazó képformátum. A Google fejlesztette ki, hogy csökkentse a web hálózati forgalmának jelenleg (2010) mintegy 65%-át adó képfájlok átlagos méretét, ezzel is gyorsítva a weboldalak betöltődését. A Google tesztjei szerint amit a weben található egymillió, véletlenszerűen kiválasztott képfájl (többnyire JPG, néhány PNG és GIF) tömörítésével végeztek, átlagosan 39%-kal lehetett csökkenteni a fájlok méretét, szemmel látható minőségvesztés nélkül.
+A WebP a VP8 videotömörítő (a WebM kodekje) intra frame kódolóján alapul, konténerként RIFF-et használ.
+A Google a Chromium blogján jelentette be az új formátumot 2010. szeptember 30-án. A Google-termékek közül elsőként a Chrome webböngészőben jelent meg a WebP támogatása (a Safari által is használt WebKithez kiadott patch formájában).
+2011. október 3-án jelentették be, hogy a WebP a RIFF konténer segítségével támogatni fogja az animációt, az ICC profilokat, az XMP metaadatokat és a csempézést (legfeljebb 16384×16384 pixeles képekből óriáskép előállítása). 2011. november 18-án kezdték tesztelni a veszteségmentes tömörítés és az alfacsatorna (átlátszóság) támogatását, ez végül a libwebp 0.2.0 változatában, 2012. augusztus 16-án jelent meg. Saját kezdeti méréseik alapján a PNG → WebP átalakítás során a weben található képek átlagosan 45%-kal, az előzetesen pngcrush-sal és pngouttal optimalizált képek 28%-kal lettek kisebbek.
+Forrás: Wikipédia
+
+https://hu.wikipedia.org/wiki/WebP
