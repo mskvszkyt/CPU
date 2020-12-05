@@ -1,10 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="hu">
 
 <head>
     <!--A stílusokat egy külső fájlban adjuk meg!-->
     <link rel="stylesheet" href="stilusok.css">
 </head>
+<style>
+    section {
+        font-size: 100%;
+    }
+
+    caption {
+        border-bottom-left-radius: 50%;
+    }
+</style>
+<meta charset="UTF-8">
 
 <!--Használja gyakran az Alt+Shift+F kombinációt!-->
 
@@ -12,10 +22,74 @@
     <table>
         <caption>AMD és INTEL processzorok összehasonlítása</caption>
         <thead>
-
+            <tr>
+                <th></th>
+                <th colspan="2"><a href="https://www.amd.com/en">AMD</a></th>
+                <th colspan="2"><a href="https://www.intel.com/content/www/us/en/homepage.html">INTEL</a></th>
+            </tr>
+            <tr>
+                <th></th>
+                <th>AMD Ryzen™ 5 2600</th>
+                <th>AMD Ryzen™ 5 3600</th>
+                <th>Intel® Core™ i5-8400</th>
+                <th>Intel® Core™ i5-9400</th>
         </thead>
         <tbody>
-
+            </tr>
+            <tr>
+                <th>Magok száma</th>
+                <td colspan="4">6 mag</td>
+            </tr>
+            <tr>
+                <th>Szálak száma</th>
+                <td colspan="2">12 szál</td>
+                <td colspan="2">6 szál</td>
+            </tr>
+            <tr>
+                <th>Órajel <br>frekvencia</th>
+                <td>3.40 GHz</td>
+                <td>3.60 GHz</td>
+                <td>2.80 GHz</td>
+                <td>2.90 GHz</td>
+            </tr>
+            <tr>
+                <th>Gyártási <br>technológia</th>
+                <td>12nm</td>
+                <td>7nm</td>
+                <td colspan="2">14nm</td>
+            </tr>
+            <tr>
+                <th><abbr title="Thermal Design Power">TDP</abbr></th>
+                <td colspan="4">65 W</td>
+            </tr>
+            <tr>
+                <th></th>
+                <td><img src="Images\AMD-Ryzen-5-2600.jpg" alt="" height="100px"></td>
+                <td><img src="Images\AMD-Ryzen-5-3600.webp" alt="" height="100px"></td>
+                <td><img src="Images\Intel-Core-i5-8400.png" alt="" height="100px"></td>
+                <td><img src="Images\Intel-Core-i5-9400.png" alt="" height="100px"></td>
+            </tr>
+             
+            <tr>
+                <th>Ár</th>
+                <td>47.320Ft - 55.390Ft</td>
+                <td>79.990Ft - 87.782Ft</td>
+                <td>58.970Ft - 60.140Ft</td>
+                <td>58.090F - 61.490Ft</td>
+            </tr>
+            <tr>
+                <th rowspan="2"><img src="Images\\links.png" height="7%"></th>
+                <th><a href="https://www.amd.com/en/products/cpu/amd-ryzen-5-2600#product-specs" title="AMD-Ryzen-5-2600">Specifikáció</a></th>
+                <th><a href="https://www.amd.com/en/products/cpu/amd-ryzen-5-3600#product-specs" title="AMD-Ryzen-5-3600">Specifikáció</a></th>
+                <th><a href="https://ark.intel.com/content/www/us/en/ark/products/126687/intel-core-i5-8400-processor-9m-cache-up-to-4-00-ghz.html" title="Intel-Core-i5-8400">Specifikáció</a></th>
+                <th><a href="https://ark.intel.com/content/www/us/en/ark/products/134898/intel-core-i5-9400-processor-9m-cache-up-to-4-10-ghz.html" title="Intel-Core-i5-9400">Specifikáció</a></th>
+            </tr>
+            <tr>
+                <th><a href="https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+5+2600&id=3243" title="13.256 pont">Sebesség teszt</a></th>
+                <th><a href="https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+5+3600&id=3481" title="17.867 pont">Sebesség teszt</a></th>
+                <th><a href="https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i5-8400+%40+2.80GHz&id=3097" title="9.209 pont">Sebesség teszt</a></th>
+                <th><a href="https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i5-9400+%40+2.90GHz&id=3414" title="9.537 pont">Sebesség teszt</a></th>
+            </tr>
         </tbody>
         <tfoot>
 
@@ -24,8 +98,10 @@
 
     <section>
         <h1>Fogalmak és új ismeretek</h1>
+        <hr>
         <h3>WebP</h3>
-        <p>A WebP (ejtsd: „veppi”) egy új, veszteséges és veszteségmentes tömörítést alkalmazó képformátum. A Google
+        <p>A <b>WebP</b> (ejtsd: „veppi”) egy új, veszteséges és veszteségmentes tömörítést alkalmazó képformátum. A
+            Google
             fejlesztette ki, hogy csökkentse a web hálózati forgalmának jelenleg (2010) mintegy 65%-át adó képfájlok
             átlagos méretét, ezzel is gyorsítva a weboldalak betöltődését. A Google tesztjei szerint amit a weben
             található egymillió, véletlenszerűen kiválasztott képfájl (többnyire JPG, néhány PNG és GIF) tömörítésével
@@ -34,33 +110,42 @@
             A Google a Chromium blogján jelentette be az új formátumot 2010. szeptember 30-án. A Google-termékek közül
             elsőként a Chrome webböngészőben jelent meg a WebP támogatása (a Safari által is használt WebKithez kiadott
             patch formájában).
+        </p>
+        <p>
             2011. október 3-án jelentették be, hogy a WebP a RIFF konténer segítségével támogatni fogja az animációt, az
             ICC profilokat, az XMP metaadatokat és a csempézést (legfeljebb 16384×16384 pixeles képekből óriáskép
             előállítása). 2011. november 18-án kezdték tesztelni a veszteségmentes tömörítés és az alfacsatorna
             (átlátszóság) támogatását, ez végül a libwebp 0.2.0 változatában, 2012. augusztus 16-án jelent meg. Saját
             kezdeti méréseik alapján a PNG → WebP átalakítás során a weben található képek átlagosan 45%-kal, az
             előzetesen pngcrush-sal és pngouttal optimalizált képek 28%-kal lettek kisebbek.
-            <br>Forrás: <a href="https://hu.wikipedia.org/wiki/WebP">Wikipédia</a></p>
+        <p>
+            Forrás: <a href="https://hu.wikipedia.org/wiki/WebP"> Wikipédia</a>
+        </p>
+        <hr>
         <h3>TDP</h3>
-        <p>TDP - Thermal Design Power
-
-
-            Then Thermal design power (TDP), sometimes called thermal design point, is the maximum amount of heat
+        <p>
+            Then <b> Thermal design power</b> (TDP), sometimes called thermal design point, is the maximum amount of
+            heat
             generated by a computer chip or component (often a CPU, GPU or system on a chip) that the cooling system in
             a computer is designed to dissipate under any workload.
+        </p>
+        <p>
             The TDP is typically not the largest amount of heat the CPU could ever generate (peak power), such as by
             running a power virus, but rather the maximum amount of heat that it would generate when running "real
             applications". This ensures the computer will be able to handle essentially all applications without
             exceeding its thermal envelope, or requiring a cooling system for the maximum theoretical power (which would
             cost more but in favor of extra headroom for processing power).
-
-
             The dynamic power consumed by a switching circuit is approximately proportional to the square of the
-            voltage:
-
-            where C is capacitance, f is frequency, and V is voltage.
-
-            <br>Forrás: <a href="https://en.wikipedia.org/wiki/Thermal_design_power">Wikipédia</a></p>
+            voltage: P=CV<sup>2</sup>f
+        </p>
+        <p>
+        <ul>
+            <li>C is capacitance </li>
+            <li> f is frequency</li>
+            <li>V is voltage </li>
+        </ul>
+        </p>
+        <p>Forrás: <a href="https://en.wikipedia.org/wiki/Thermal_design_power">Wikipédia</a></p>
     </section>
 </body>
 
